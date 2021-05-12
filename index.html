@@ -16,20 +16,20 @@
       <header>
         <!-- NavBar -->
         <nav>
-            <div class="nav-wrapper blue darken-4">
+            <div class="nav-wrapper blue lighten-2">
                 <a href="#!" class="brand-logo ml-4 hide-on-med-and-down">Great Lakes Services</a>
                 <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="locations.html">Our Locations</a></li>
-                    <li><a href="membership.html">Become a Member Today!</a></li>
+                    <li><a href="membership.html">Join Us</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="locations.html">Our Locations</a></li>
-                    <li><a href="membership.html">Become a Member Today!</a></li>
+                    <li><a href="membership.html">Join Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,6 +42,76 @@
           </div>
         </div>
       </header>
+
+      <!-- Section: Services -->
+      <section class="section section-services">
+        <div class="container">
+          <div class="row">
+            <h4 class="col. 12 m12 s12 center mt-4 mb-4 dark-grey-text">
+              Experience a variety of unique services only found in our Great American Lakes
+            </h5>
+          </div>
+          <div class="row">
+            <div class="col l3 m3 s12">
+              <div class="card red lighten-2 center">
+                <div class="card-content white-text">
+                  <h3 class="card-title">Boat Tours</h3>
+                  <i class="material-icons large">directions_boat</i>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m3 s12">
+              <div class="card red lighten-2 center">
+                <div class="card-content white-text center">
+                  <h3 class="card-title">Fishing Trips</h3>
+                  <i class="material-icons large">local_dining</i>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m3 s12">
+              <div class="card red lighten-2 center">
+                <div class="card-content white-text center">
+                  <h3 class="card-title">Island Hopping</h3>
+                  <i class="material-icons large">beach_access</i>
+                </div>
+              </div>
+            </div>
+            <div class="col l3 m3 s12">
+              <div class="card red lighten-2 center">
+                <div class="card-content white-text center">
+                  <h3 class="card-title">Kayaks & Canoes</h3>
+                  <i class="material-icons large">rowing</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container center mb-4">
+            <a href="services.html" class="btn btn-large waves-effect blue lighten-2">Get more details here!</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Gallery -->
+      <div class="section section-gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col l12 m12 s12">
+              <div class="carousel carousel-large">
+                <a href="#one!" class="carousel-item"><img src="img/carousel-1.jpg" alt=""></a>
+                <a href="#two!" class="carousel-item"><img src="img/carousel-2.jpg" alt=""></a>
+                <a href="#three!" class="carousel-item"><img src="img/carousel-3.jpg" alt=""></a>
+                <a href="#four!" class="carousel-item"><img src="img/carousel-4.jpg" alt=""></a>
+                <a href="#five!" class="carousel-item"><img src="img/carousel-5.jpg" alt=""></a>
+                <a href="#six!" class="carousel-item"><img src="img/carousel-6.jpg" alt=""></a>
+                <a href="#seven!" class="carousel-item"><img src="img/carousel-7.jpg" alt=""></a>
+                <a href="#eight!" class="carousel-item"><img src="img/carousel-8.jpg" alt=""></a>
+                <a href="#nine!" class="carousel-item"><img src="img/carousel-9.jpg" alt=""></a>
+                <a href="#ten!" class="carousel-item"><img src="img/carousel-10.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -49,7 +119,13 @@
       <!-- Initialization -->
       <script>
         $(document).ready(function() {
+            // Init Side Nav
             $('.button-collapse').sideNav();
+
+            // Init Carousel
+            $('.carousel').carousel({
+
+            });
         })
       </script>
     </body>

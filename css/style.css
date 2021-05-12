@@ -77,6 +77,10 @@
     width: 100%;
 }
 
+.carousel .carousel-item > img {
+    width: 230% !important;
+}
+
 /* Showcase */
 #showcase {
     background-image: url(../img/sail_boat.jpg);
@@ -92,4 +96,14 @@
     position: relative;
     padding: 2rem;
     z-index: 10;
+}
+
+/* Section Backgrounds */
+
+.section-services {
+    background-color: #ccc;
+}
+
+.section-gallery {
+    background-color: #f4f4f4;
 }
