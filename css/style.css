@@ -81,6 +81,14 @@
     width: 230% !important;
 }
 
+.image-height-300px {
+    height: 150px !important;
+}
+
+.border-bottom {
+    border-bottom: 5px solid #e57373;
+}
+
 /* Showcase */
 #showcase {
     background-image: url(../img/sail_boat.jpg);
@@ -106,4 +114,8 @@
 
 .section-gallery {
     background-color: #f4f4f4;
+}
+
+.section-social {
+    background-color: #e57373;
 }

@@ -7,6 +7,9 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/style.css">
 
+      <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/56f5ca89c0.js" crossorigin="anonymous"></script>
+
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Great Lakes Services | Home</title>
@@ -94,24 +97,85 @@
       <!-- Section: Gallery -->
       <div class="section section-gallery">
         <div class="container">
+          <h1 class="text-flow center mb-5"><span class="border-bottom">Image Gallery</span></h1>
+          <!-- Row 1 -->
           <div class="row">
-            <div class="col l12 m12 s12">
-              <div class="carousel carousel-large">
-                <a href="#one!" class="carousel-item"><img src="img/carousel-1.jpg" alt=""></a>
-                <a href="#two!" class="carousel-item"><img src="img/carousel-2.jpg" alt=""></a>
-                <a href="#three!" class="carousel-item"><img src="img/carousel-3.jpg" alt=""></a>
-                <a href="#four!" class="carousel-item"><img src="img/carousel-4.jpg" alt=""></a>
-                <a href="#five!" class="carousel-item"><img src="img/carousel-5.jpg" alt=""></a>
-                <a href="#six!" class="carousel-item"><img src="img/carousel-6.jpg" alt=""></a>
-                <a href="#seven!" class="carousel-item"><img src="img/carousel-7.jpg" alt=""></a>
-                <a href="#eight!" class="carousel-item"><img src="img/carousel-8.jpg" alt=""></a>
-                <a href="#nine!" class="carousel-item"><img src="img/carousel-9.jpg" alt=""></a>
-                <a href="#ten!" class="carousel-item"><img src="img/carousel-10.jpg" alt=""></a>
-              </div>
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-1.jpg" alt="">
+            </div>
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-2.jpg" alt="">
+            </div>
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-3.jpg" alt="">
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="row">
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-4.jpg" alt="">
+            </div>
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-5.jpg" alt="">
+            </div>
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-6.jpg" alt="">
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="row">
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-7.jpg" alt="">
+            </div>
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-8.jpg" alt="">
+            </div>
+            <div class="col l4 m4 s12">
+              <img class="responsive-img materialboxed" src="./img/gallery-9.jpg" alt="">
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Section: Social Media -->
+      <section class="section section-social">
+        <div class="container">
+          <h1 class="flow-text center">Follow Us on Social Media</h1>
+          <div class="row">
+            <div class="col l4 m4 s12">
+              <div class="card blue lighten-2">
+                <div class="card-content white-text center">
+                  <i class="fab fa-facebook large"></i>
+                </div>
+                <div class="card-action">
+                  <a href="facebook.com" class="white-text">Facebook</a>
+                </div>
+              </div>
+            </div>
+            <div class="col l4 m4 s12">
+              <div class="card blue lighten-2">
+                <div class="card-content white-text center">
+                  <i class="fab fa-twitter large"></i>
+                </div>
+                <div class="card-action">
+                  <a href="twitter.com" class="white-text">Twitter</a>
+                </div>
+              </div>
+            </div>
+            <div class="col l4 m4 s12">
+              <div class="card blue lighten-2">
+                <div class="card-content white-text center">
+                  <i class="fab fa-instagram large"></i>
+                </div>
+                <div class="card-action">
+                  <a href="instagram.com" class="white-text">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -122,10 +186,10 @@
             // Init Side Nav
             $('.button-collapse').sideNav();
 
-            // Init Carousel
-            $('.carousel').carousel({
-
-            });
+            // Init MaterialBoxed
+            $(document).ready(function() {
+              $('.materialboxed').materialbox();
+            })
         })
       </script>
     </body>
