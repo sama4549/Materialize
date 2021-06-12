@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/style.css">
+  
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/56f5ca89c0.js" crossorigin="anonymous"></script>
+  
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Great Lakes Services | Services</title>
+      </head>
+<body>
+    <header>
+        <!-- NavBar -->
+        <nav>
+            <div class="nav-wrapper grey darken-2">
+                <a href="index.html" class="brand-logo ml-4 hide-on-med-and-down">Great Lakes Services</a>
+                <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html">Our Locations</a></li>
+                    <li><a href="membership.html">Join Us</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="locations.html">Our Locations</a></li>
+                    <li><a href="membership.html">Join Us</a></li>
+                </ul>
+            </div>
+        </nav>
+      </header>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <!-- Initialization -->
+      <script>
+        $(document).ready(function() {
+            // Init Side Nav
+            $('.button-collapse').sideNav();
+
+            // Init MaterialBoxed
+            $(document).ready(function() {
+              $('.materialboxed').materialbox();
+            })
+        })
+      </script>
+</body>
+</html>

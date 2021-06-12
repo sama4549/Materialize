@@ -89,6 +89,10 @@
     border-bottom: 5px solid #e57373;
 }
 
+.section-gallery img {
+    border: #ccc solid 1px;
+}
+
 /* Showcase */
 #showcase {
     background-image: url(../img/sail_boat.jpg);
@@ -117,5 +121,23 @@
 }
 
 .section-social {
-    background-color: #e57373;
+    background-color: #ccc;
+}
+
+.section-footer {
+    max-height: 10px;
+}
+
+.page-footer,
+.footer-copyright,
+.section-footer {
+    background-color: #333;
+}
+
+.footer-copyright p {
+    margin-left: 80px;
+}
+
+.section-footer {
+    margin-bottom: 0px;
 }
