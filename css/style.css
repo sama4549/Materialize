@@ -93,6 +93,14 @@
     border: #ccc solid 1px;
 }
 
+nav .current {
+    background-color: #333;
+}
+
+nav .side-nav .current {
+    background-color: #ccc;
+}
+
 /* Showcase */
 #showcase {
     background-image: url(../img/sail_boat.jpg);

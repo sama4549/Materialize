@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/style.css">
+  
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/56f5ca89c0.js" crossorigin="anonymous"></script>
+  
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Great Lakes Services | About Us</title>
+      </head>
+<body>
+    <header>
+        <!-- NavBar -->
+        <nav>
+            <div class="nav-wrapper grey darken-2">
+                <a href="index.html" class="brand-logo ml-4 hide-on-med-and-down">Great Lakes Services</a>
+                <a href="#!" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="about.html" class="current">About Us</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="membership.html">Join Us</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="about.html" class="current">About Us</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="membership.html">Join Us</a></li>
+                </ul>
+            </div>
+        </nav>
+      </header>
+
+      <!-- Section: About Us -->
+      <section class="section section-about-us mt-6">
+          <div class="container">
+              <h2 class="header center">About Us</h2>
+              <div class="row">
+                  <div class="col l6 m6 s6">
+                      <img src="/img/Crew.jpg" alt="Our Crew" class="responsive-img">
+                  </div>
+                  <div class="col l6 m6 s6">
+                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus culpa eveniet modi placeat quod unde perspiciatis suscipit consequatur quisquam quibusdam! Harum nesciunt a atque corrupti! Totam, ex dolorem delectus rerum cupiditate vitae tempore nulla dolor incidunt deserunt dolorum. Nisi aliquid fuga sed asperiores quibusdam ipsa saepe quia nulla voluptas incidunt?</p>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Section: Contact -->
+      <section class="section section-form">
+        <div class="container">
+          <h2 class="header center">Contact Us</h2>
+          <form>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input type="text" placeholder="First Name" class="validate">
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input type="text" placeholder="Last Name" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">home</i>
+                <input type="text" placeholder="Address" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">mail</i>
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">business</i>
+                <input type="text" placeholder="Company">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">insert_comment</i>
+                <textarea class="materialize-textarea" placeholder="Message" cols="80" rows="10"></textarea>
+              </div>
+            </div>
+            <button class="btn waves-effect waves-light red lighten-2" type="submit">
+              Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+        <!-- Section: Footer -->
+        <section class="section section-footer mt-6">
+            <footer class="page-footer">
+                <div class="footer-copyright">
+                    <p class="mb-4">&copy; 2021 Great Lakes Services Inc.</p>
+                </div>
+            </footer>
+        </section>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <!-- Initialization -->
+      <script>
+        $(document).ready(function() {
+            // Init Side Nav
+            $('.button-collapse').sideNav();
+
+            // Init MaterialBoxed
+            $(document).ready(function() {
+              $('.materialboxed').materialbox();
+            })
+        })
+      </script>
+</body>
+</html>
