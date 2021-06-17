@@ -67,6 +67,12 @@
     margin-bottom: 70px;
 }
 
+/* Border Utility Classes */
+.border-dark-grey {
+    border: #333 solid 2px;
+    padding: 50px;
+}
+
 /* Other Utility Classes */
 .overlay {
     position: absolute;
