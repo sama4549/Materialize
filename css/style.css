@@ -67,11 +67,6 @@
     margin-bottom: 70px;
 }
 
-/* Border Utility Classes */
-.border-dark-grey {
-    border: #333 solid 2px;
-    padding: 50px;
-}
 
 /* Other Utility Classes */
 .overlay {
@@ -107,6 +102,10 @@ nav .side-nav .current {
     background-color: #ccc;
 }
 
+a {
+    color: #fff;
+}
+
 /* Showcase */
 #showcase {
     background-image: url(../img/sail_boat.jpg);
@@ -122,6 +121,47 @@ nav .side-nav .current {
     position: relative;
     padding: 2rem;
     z-index: 10;
+}
+
+/* Video Showcase */
+.section-about-us {
+    margin: 0;
+    padding: 0;
+}
+
+.section-about-us .video-container {
+    position: relative;
+    margin: 0;
+}
+
+.video-container h2 {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Tables */
+table.striped thead tr {
+    background-color: #ddd;
+    font-weight: bold;
+}
+table.striped tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+table.striped tbody tr:nth-child(even) {
+    background-color: #ddd;
 }
 
 /* Section Backgrounds */
@@ -154,4 +194,9 @@ nav .side-nav .current {
 
 .section-footer {
     margin-bottom: 0px;
+}
+
+/* Media Queries */
+@media(max-width: 700px) {
+
 }
